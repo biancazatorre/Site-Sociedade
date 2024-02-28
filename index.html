@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sociedade de Advogados</title>
+</head>
+<body>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+        
+            margin: 0;
+            padding: 0;
+            max-width: fit-content;
+        }
+        #ex1{
+            width: 400px;
+            height: auto;
+            padding: 30px;
+        }
+        #center{
+            padding: 20px;
+            background-image: url(Imagens/fundo-azul.jpg);
+
+            background-size: 100%;
+            color: white;
+            align-items: center;
+           
+        }
+        #center h1,h2, footer p{
+            text-align: center;
+        }
+
+        .conteudo{
+            display: grid
+                                   ;
+        }
+
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            /* background-image: url(Imagens/uau.png);
+            background-size: 100%;
+            background-repeat: no-repeat; */
+        }
+        #logo{
+            margin-left: 20px;
+        }
+        .menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            
+        }
+    
+        .menu li {
+            float: left;
+        }
+        .menu li a {
+            display: block;
+            color: #144770;
+            text-align: center;
+            padding: 30px;
+            text-decoration: none;
+        }
+        .menu li a:hover {
+            background-color:#144770;
+            color:#b6af92;
+        }
+
+       
+        form{
+            width: 50%;
+            padding: 10px;
+            margin-left: 50px;
+        }
+        legend{
+            color: #b6af92;
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        .botao{
+            border: solid 1px #b6af92;
+            border-radius: 20px;
+            width: 100px;
+            color: #144770;
+            background-color: #b6af92;
+            padding: 10px;
+
+            transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+        }
+
+
+        .botao:hover{
+        background-color: #d9af3b;
+        color: #144770;
+    transform: scale(1.2)
+    }
+
+        footer{
+            color: #144770;
+            background-color: #b6af92;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+<header>
+    <div id="logo">
+        <a href="index.html"><img src="Imagens/logo.png" alt="logo"></a>
+    </div>
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#quem-somos">Quem somos</a></li>
+        <li><a href="#profissionais">Profissionais</a></li>
+        <li><a href="#area-de-atuacao">Área de Atuação</a></li>
+        <li><a href="#localizacao">Localização</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </ul>
+</header>
+    <!-- Conteúdo da página -->
+    <div id="center">
+        <h1>Julio César Garcia - Sociedade de Advogados</h1>
+        
+
+        <div class="conteudo">
+            <p>
+                Bem-vindo ao JCG Sociedade de Advogados!
+                
+                Somos um escritório jurídico com um corpo jurídico sólido e uma equipe complementar de renegociadores seniores e profissionais administrativos. Nossa expertise está na defesa dos interesses de instituições financeiras e sociedades seguradoras, oferecendo serviços de qualidade e excelência nas áreas do Direito Bancário e Securitário.
+                </p>
+            <img id="ex1" loading="lazy" src="Imagens/EXescritorio.jpg" alt="xxx">
+            <p>Confie em nós para representar seus interesses com dedicação e experiência. Estamos aqui para oferecer soluções jurídicas eficazes e garantir a satisfação de nossos clientes. Entre em contato conosco para saber como podemos ajudá-lo.</p>
+            <img id="ex1" loading="lazy" src="Imagens/EXescritorio.jpg" alt="xxx">
+        </div>
+
+        <h1 id="quem-somos">Quem Somos</h1>
+        <div class="conteudo">
+    
+            <p>A Julio Cesar Garcia Sociedade de Advogados é uma firma de advocacia fundada em 1994, focada em tecnologia e em equipes altamente qualificadas. Prioriza o aprimoramento técnico e intelectual de seus colaboradores para garantir excelência na prestação de serviços jurídicos. Comprometida com ética e responsabilidade social, busca soluções legais eficazes por meio de um atendimento claro e objetivo, visando a satisfação dos clientes. Os sócios participam ativamente de projetos sociais visando o aprimoramento das relações humanas. A expertise da empresa está na defesa de interesses de instituições financeiras e sociedades seguradoras, especialmente nas áreas do Direito Bancário e Securitário. Com sedes em Santos/SP e Rio de Janeiro/RJ, atende demandas em todas as comarcas desses estados, contando com profissionais próprios e correspondentes. O constante investimento permite expandir os serviços para outras regiões do Brasil.</p>
+        
+            <img id="ex1" loading="lazy" src="Imagens/EXescritorio.jpg" alt="xxx">
+        </div>
+        
+        <h1 id="profissionais">Profissionais</h1>
+        <div class="conteudo"> 
+            
+                <h3>Dr. Julio Cesar Garcia</h3>
+                <p>
+                A equipe profissional é liderada pelo Dr. Julio Cesar Garcia, com vasta experiência em serviços bancários e especialização em Direito Bancário, Securitário e Marítimo. Após graduar-se em Direito, ele realizou cursos de pós-graduação e mestrado em Direito Difusos e Coletivo. 
+                </p>
+                <img id="ex1" loading="lazy" src="Imagens/EXescritorio.jpg" alt="xxx">
+                <!-- FOTO DELE AQUI -->
+                <h3>Dra Cláudia de Oliveira Martins Pierry Garcia</h3>
+                <p>
+                A sócia Dra. Cláudia de Oliveira Martins Pierry Garcia, com formação em Terapia Ocupacional e Direito, coordena a equipe administrativa e de renegociadores, proporcionando eficiência e resultados satisfatórios aos clientes.
+                </p>
+                <!-- FOTO DELA AQUI -->    
+                <img id="ex1" loading="lazy" src="Imagens/EXescritorio.jpg" alt="xxx">
+        </div>
+
+        <h1 id="area-de-atuacao">Área de Atuação</h1>
+
+        <div class="conteudo">
+            
+                Nosso trabalho abrange três áreas principais do Direito:
+            <div class="atuacao">
+
+                <div class="imgAtuacao">
+                    <img id="ex1" loading="lazy" src="Imagens/empresarial.jpg" alt="xxx">
+                </div>
+                <div class="textoAtuacao">
+                <h3>Área Empresarial</h3>
+                <p>
+                Direito Bancário: Defendemos os interesses de instituições financeiras e sociedades seguradoras, buscando soluções rápidas através da transação judicial quando favorável ao cliente.
+                <br><br>
+                Direito Securitário: Atuamos em todos os aspectos do contencioso, protegendo os interesses das sociedades seguradoras, especialmente em casos de recusa de cobertura de sinistros.
+                <br><br>
+                Transporte Rodoviário e Marítimo: Defendemos os interesses dos transportadores em acidentes que envolvem responsabilidade civil.
+                </p>
+                <br><br>
+                
+                </div>
+
+                <div>
+                <h3>Área do Contencioso </h3>
+                <p>
+                Contencioso Judicial Cível: Defendemos interesses de instituições financeiras, seguradoras e transportadores, além de lidar com questões de responsabilidade civil e consumo.
+                </p>
+                <img id="ex1" loading="lazy" src="Imagens/EXescritorio.jpg" alt="xxx">
+                </div>
+
+                <div>
+                <h3>Área Trabalhista- Contencioso Judicial e Administrativo</h3>
+                <p>
+                 Oferecemos serviços de contencioso judicial e administrativo, especialmente em Direito do Trabalho, com uma célula dedicada a esta área.
+                </p>
+
+                <img id="ex1" loading="lazy" src="Imagens/EXescritorio.jpg" alt="xxx">
+                </div>
+            </div>
+        </div>
+        
+        <h1 id="localizacao">Localização</h1>
+        <div class="conteudo">
+            <p>Nosso escritório em Santos está situado na
+
+                Rua São Francisco n.º 240
+                Centro - Santos/SP
+                Cep: 11013-202
+                
+                Telefone: (13) 4010-3850
+                
+                Fax: (13) 4010-3850 - Ramal 3870
+                
+                Email: juridico@jcgarcia.adv.br
+            </p>
+            <p>
+                Nosso escritório no Rio de Janeiro está situado na
+
+                Av. Rio Branco n.º 26, Sobreloja
+                Centro - Rio de Janeiro/RJ
+                Cep: 20090-001
+
+                Telefone: (21) 4042-2460 ou 0800 7575 900
+
+                Celular: (13)99796-0313
+
+                Email: juridico@jcgarcia.adv.br
+            </p>
+            <img id="ex1" loading="lazy" src="Imagens/EXescritorio.jpg" alt="xxx">
+        </div>
+        
+        <h1 id="contato">Contato</h1>
+        <div class="conteudo">
+            <form action="get">
+                
+                    <legend>Entre em Contato</legend>
+                    
+                    <label for="name">Nome * </label>
+                    <input type="text" name="name" id="name" required>
+                    <br><br>
+                    <label for="tel">Telefone *</label>
+                    <input type="phone" name="number" id="number" required>
+                    <br><br>
+                    <label for="email">E-mail *</label>
+                    <input type="email" name="email" id="email" required>
+                    <br><br>
+
+                    <label for="mensagem">Mensagem *</label>
+                    <br><br>
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+                    <br><br>
+                    <button class="botao">Enviar</button>
+
+
+        
+
+            </form>
+            <img id="ex1" loading="lazy" src="Imagens/EXescritorio.jpg" alt="xxx">                                                                                                                   
+        </div>
+    </div>
+
+<footer>
+   <p> JC Garcia Sociedade de Advogados - Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
