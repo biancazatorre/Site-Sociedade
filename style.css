@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+  }
 
 body {
     font-family: "Open Sans", sans-serif;
@@ -8,7 +13,65 @@ body {
 }
 
 
-header{
+.Container {
+    margin: 0 auto;
+    background-color: aqua;
+}
+
+.Flex {
+    display: flex;
+    justify-content: space-between;
+    background-color: pink;
+}
+
+#topo{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 10px;
+}
+
+header {
+    height: 60px;
+    
+}
+
+#check{
+    display: none;
+}
+
+label{
+    font-size: 3em;
+    padding-right: 15px;
+}
+
+ul{
+    list-style: none;
+    background-color: aliceblue;
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+#check:checked ~ ul{
+    right: 0;
+}
+
+ul li{
+    padding: 20px;
+    border-bottom: 1px solid #144770;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+
+}
+
+
+/* header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,8 +84,7 @@ header{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    
+    display: flex;  
 }
 
 .menu li {
@@ -101,71 +163,43 @@ footer{
     color: #144770;
     background-color: #b6af92;
     padding: 20px;
-}
+} */
 
-/*topo*/
-#topo{
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
-    width: 10px;
-}
+
 
 /*PC*/
-@media (min-width:1200){
-
-}
-
-
-/* Smartphone */
-@media (min-width: 350){
+@media (min-width:1200px){
     body{
-        background-color: #144770;
-       
+        background-color: bisque;
     }
-    *{
-        max-width: 0 auto;
+    .Container{
+        max-width: 1140px;
     }
-
     header{
-        height: 60px;
+        height: 120px;
     }
-
-    #logo img {
-        width: 80px;
-    }
-    #check{
-        display: none;
+    logo img{
+        margin-top:30px;
     }
     label{
-        font-size: 3em;
-        padding-right: 15px;
+        display: none;
     }
-    
-    ul{
-        list-style: none;
-        background-color: aliceblue;
-        height: 100vh;
-        position: fixed;
-        top: 60px;
-        right: -100%;
-        width: 100%;
-        transition: all 0.5s;
+    nav ul{
+        position: static;
+        height: auto;
+        background-color: transparent;
+        margin-top: 50px;
     }
-
-    #check:checked ~ ul{
-        right: 0;
+    nav ul li{
+        float: left;
+        border: 0;
     }
-    
-    ul li{
-        padding: 20px;
-        border-bottom: 1px solid #144770;
+    nav ul li a{
+        color: #144770;
     }
-    ul li a{
-        text-decoration: none;
-        color: #fff;
-
+    nav ul li a:hover {
+        background-color:#144770;
+        color:#ffffff;
     }
-    
 }
 

@@ -13,26 +13,25 @@
 </head>
 <body>
     
-<header>
-    <div id="logo">
+<header id="inicio">
+    <div class="Container Flex">
+        <div id="logo">
         <a href="index.html"><img src="Imagens/logo.png" alt="hal 9000"></a>
-    </div>
+        </div>
 
-    
+    </div>
     <nav>
         <input type="checkbox"  id="check">
         <label for="check">&#x268c;</label>
+        <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#content">Quem somos</a></li>
+            <li><a href="#profissionais">Profissionais</a></li>
+            <li><a href="#area-de-atuacao">Área de Atuação</a></li>
+            <li><a href="#localizacao">Localização</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
     </nav>
-
-    
-    <ul class="menu">
-        <li><a href="index.html">Início</a></li>
-        <li><a href="#quem-somos">Quem somos</a></li>
-        <li><a href="#profissionais">Profissionais</a></li>
-        <li><a href="#area-de-atuacao">Área de Atuação</a></li>
-        <li><a href="#localizacao">Localização</a></li>
-        <li><a href="#contato">Contato</a></li>
-    </ul>
 </header>
 
 
@@ -44,31 +43,42 @@
 
 
     <!-- Conteúdo da página -->
-    <div id="center">
-        <h1>Julio César Garcia - Sociedade de Advogados</h1>
-        
+    <main>
+    
+        <section class="conteudo" class="Container">
+            <h1>Julio César Garcia</h1>
+            <h2>Sociedade de Advogados</h2>
+        </section>
 
-        <div class="conteudo">
-            <p>
+    </main>
+        <section id="sobre">
+            <div class="Container">
+                <img id="ex1" loading="lazy" src="Imagens/EXescritorio.jpg" alt="xxx">
+                <p>
                 Bem-vindo ao JCG Sociedade de Advogados!
                 
-                Somos um escritório jurídico com um corpo jurídico sólido e uma equipe complementar de renegociadores seniores e profissionais administrativos. Nossa expertise está na defesa dos interesses de instituições financeiras e sociedades seguradoras, oferecendo serviços de qualidade e excelência nas áreas do Direito Bancário e Securitário.
+                Somos um escritório jurídico com um corpo jurídico sólido e uma equipe complementar de renegociadores seniores e profissionais administrativos. 
+                <br><br>
+                Nossa expertise está na defesa dos interesses de instituições financeiras e sociedades seguradoras, oferecendo serviços de qualidade e excelência nas áreas do Direito Bancário e Securitário.
                 </p>
-            <img id="ex1" loading="lazy" src="Imagens/EXescritorio.jpg" alt="xxx">
-            <p>Confie em nós para representar seus interesses com dedicação e experiência. Estamos aqui para oferecer soluções jurídicas eficazes e garantir a satisfação de nossos clientes. Entre em contato conosco para saber como podemos ajudá-lo.</p>
-            <img id="ex1" loading="lazy" src="Imagens/EXescritorio.jpg" alt="xxx">
-        </div>
 
-        <h1 id="quem-somos">Quem Somos</h1>
-        <div class="conteudo">
+                <p>Confie em nós para representar seus interesses com dedicação e experiência. Estamos aqui para oferecer soluções jurídicas eficazes e garantir a satisfação de nossos clientes. Entre em contato conosco para saber como podemos ajudá-lo.</p>
+                <img id="ex1" loading="lazy" src="Imagens/EXescritorio.jpg" alt="xxx">
+            </div>
+        </section>
+
+        
+        <section class="conteudo" id="content">
+            <h1 >Quem Somos</h1>
     
             <p>A Julio Cesar Garcia Sociedade de Advogados é uma firma de advocacia fundada em 1994, focada em tecnologia e em equipes altamente qualificadas. Prioriza o aprimoramento técnico e intelectual de seus colaboradores para garantir excelência na prestação de serviços jurídicos. Comprometida com ética e responsabilidade social, busca soluções legais eficazes por meio de um atendimento claro e objetivo, visando a satisfação dos clientes. Os sócios participam ativamente de projetos sociais visando o aprimoramento das relações humanas. A expertise da empresa está na defesa de interesses de instituições financeiras e sociedades seguradoras, especialmente nas áreas do Direito Bancário e Securitário. Com sedes em Santos/SP e Rio de Janeiro/RJ, atende demandas em todas as comarcas desses estados, contando com profissionais próprios e correspondentes. O constante investimento permite expandir os serviços para outras regiões do Brasil.</p>
         
             <img id="ex1" loading="lazy" src="Imagens/EXescritorio.jpg" alt="xxx">
-        </div>
+        </section>
         
-        <h1 id="profissionais">Profissionais</h1>
-        <div class="conteudo"> 
+        
+        <section class="conteudo"> 
+            <h1 id="profissionais">Profissionais</h1>
             
                 <h3>Dr. Julio Cesar Garcia</h3>
                 <p>
@@ -82,11 +92,11 @@
                 </p>
                 <!-- FOTO DELA AQUI -->    
                 <img id="ex1" loading="lazy" src="Imagens/EXescritorio.jpg" alt="xxx">
-        </div>
+            </section>
 
         <h1 id="area-de-atuacao">Área de Atuação</h1>
 
-        <div class="conteudo">
+        <section class="conteudo">
             
                 Nosso trabalho abrange três áreas principais do Direito:
             <div class="atuacao">
@@ -124,7 +134,7 @@
                 <img id="ex1" loading="lazy" src="Imagens/EXescritorio.jpg" alt="xxx">
                 </div>
             </div>
-        </div>
+        </section>
         
         <h1 id="localizacao">Localização</h1>
         <div class="conteudo">
@@ -184,11 +194,11 @@
             </form>
             <img id="ex1" loading="lazy" src="Imagens/EXescritorio.jpg" alt="xxx">                                                                                                                   
         </div>
-    </div>
+    
 
 <footer>
    <p> JC Garcia Sociedade de Advogados - Todos os direitos reservados</p>
-   <a href="#logo" id="topo"><img src="Imagens/up.png" alt="topo do site"></a>
+   <a href="#inicio" id="topo"><img src="Imagens/topo.png" alt="topo do site"></a>
 </footer>
 
 </body>
