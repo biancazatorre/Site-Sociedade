@@ -15,13 +15,13 @@ body {
 
 .Container {
     margin: 0 auto;
-    background-color: aqua;
+    
 }
 
 .Flex {
     display: flex;
     justify-content: space-between;
-    background-color: pink;
+    
 }
 
 #topo{
@@ -200,6 +200,7 @@ footer{
     nav ul li a:hover {
         background-color:#144770;
         color:#ffffff;
+        padding: 10px;
     }
 }
 
