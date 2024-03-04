@@ -15,6 +15,11 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
 }
+#teste{
+  background-image: url(Imagens/fundo3.jpg);
+  background-size: cover;
+  background-position: center;
+}
 
 /* Layout */
 .Container {
@@ -164,7 +169,7 @@ main h2 {
 /* Sobre */
 #sobre {
   padding: 50px 0px;
-  background: url(Imagens/fundo-azul.jpg);
+  background: url(Imagens/outro-fundo.png);
   background-size: cover;
   background-position: center;
 }
@@ -212,7 +217,7 @@ main h2 {
 /* Wireframe */
 #wireframe {
   padding: 50px 0px;
-  background: url(img/background.png);
+  background: url(Imagens/fundo-azul.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -263,7 +268,7 @@ main h2 {
 /* Rodapé */
 address {
   padding: 35px 10px 50px 10px;
-  background: url(img/background2.png);
+  background: url(Imagens/fundo-azul.jpg);
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -319,10 +324,10 @@ footer a {
     height: 85vh;
   }
 
-  main h1 ,
+  /* main h1 ,
   main h2 {
-    text-shadow: #000 0.05em 0.05em 0.05em;
-  }
+    text-shadow: #ada343 0.05em 0.05em 0.05em;
+  } */
 
   /* One page */
   #video iframe {
