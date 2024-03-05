@@ -15,11 +15,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
 }
-#teste{
-  background-image: url(Imagens/fundo3.jpg);
-  background-size: cover;
-  background-position: center;
-}
+
 
 /* Layout */
 .Container {
@@ -80,6 +76,14 @@ body {
 
 .Card img {
   border-radius: 25px 25px 0px 0px;
+  width: 338px;
+  height: 200px;
+}
+
+.pequenoLogo{
+  width: 20px;
+  height: 20px;
+  text-align: center;
 }
 
 .Card h3 {
@@ -96,6 +100,7 @@ body {
   padding: 10px 100px;
   border: 0;
 }
+
 
 /* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
@@ -176,6 +181,7 @@ main h2 {
 
 #destaqueSobre {
   display: none;
+  
 }
 
 #textoSobre {
@@ -200,47 +206,50 @@ main h2 {
   padding: 50px 10px;
 }
 
-#onepage h2 {
+#onepage h2, #wireframe h2 {
   margin-bottom: 10px;
 }
 
-#onepage p {
+#onepage p, #wireframe p {
   margin-bottom: 25px;
 }
 
-#video iframe {
-  width: 340px;
-  height: 191px;
+#video {
+  width: 600px;
+  height: 300px;
   border: 0;
+  padding: 15px;
+}
+
+
+#video img{
+  width: 500px;
+  height: 300px;
+}
+
+h3{
+  margin-bottom: 20px;
+}
+.imgAdv{
+  width: 600px;
+  height: 300px;
+  border: 0;
+  padding: 15px;
+
+}
+.imgAdv img{
+  width: 500px;
+  height: 300px;
+  border-radius: 50%
 }
 
 /* Wireframe */
 #wireframe {
-  padding: 50px 0px;
+  padding: 50px 10px;
   background: url(Imagens/fundo-azul.jpg);
   background-size: cover;
   background-position: center;
-}
-
-#textoWire {
-  color: #fff;
-  padding: 0px 10px;
-}
-
-#textoWire h2 {
-  margin-bottom: 10px;
-}
-
-#textoWire p {
-  margin-bottom: 40px;
-}
-
-#textoWire span {
-  display: none;
-}
-
-#qrcode {
-  display: none;
+  color: white;
 }
 
 /* Conteúdo */
@@ -312,66 +321,6 @@ footer a {
   margin-bottom: 25px;
 }
 
-/* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-@media (min-width: 576px) {
-  /* Layout */
-  .Container {
-    max-width: 540px;
-  }
-
-  /* Destaque */
-  main {
-    height: 85vh;
-  }
-
-  /* main h1 ,
-  main h2 {
-    text-shadow: #ada343 0.05em 0.05em 0.05em;
-  } */
-
-  /* One page */
-  #video iframe {
-    width: 560px;
-    height: 315px;
-  }
-
-  /* Rodapé */
-  .Flex5 {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  #social {
-    margin: 0;
-  }
-}
-
-/* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-@media (min-width: 768px) {
-  /* Layout */
-  .Container {
-    max-width: 720px;
-  }
-
-  /* Destaque */
-  main h1 {
-    font-size: 4em;
-  }
-
-  main h2 {
-    font-size: 2em;
-  }
-}
-
-/* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-@media (min-width: 992px) {
-  /* Layout */
-  .Container {
-    max-width: 960px;
-  } 
-  
-}
 
 /* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 1200px) {
@@ -449,23 +398,32 @@ nav ul li a:hover {
     align-items: center;
   }
 
+
   /* Wireframe */
   #wireframe {
     background-attachment: fixed;
+    padding: 50px 0px;
+    background: url(Imagens/fundo-azul.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    
   }
-
-  #wireframe span {
-    display: inline;
+ 
+  .imgAdv img{
+    width: 500px;
+    height: 300px;
+    border-radius: 50%
   }
-
-  #qrcode {
-    display: inline;
+  
+  .imgAdv{
+    width: 600px;
+    height: 300px;
+    border: 0;
+    padding: 15px;
+  
   }
-
-  #qrcode img {
-    width: 225px;
-    height: 225px;
-  }
+  
 
   /* Rodapé */
   .Flex6 {
