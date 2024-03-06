@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +13,7 @@
     <link rel="stylesheet" href="styleteste.css">
 </head>
 
+<div id="fundo">
 <body>
     <!-- Cabeçalho -->
     <header id="inicio">
@@ -40,7 +42,7 @@
             <h2>Sociedade de Advogados</h2>
         </div>
     </main>
-
+</div>
 
     <!-- Sobre -->
     <section id="sobre">
@@ -57,15 +59,15 @@
                     Nossa expertise está na defesa dos interesses de instituições financeiras e sociedades seguradoras, oferecendo serviços de qualidade e excelência nas áreas do Direito Bancário e Securitário.
                     </p>
     
-                </div>
+                
             </div>
         </div>
     </section>
     <!-- One page -->
     <section id="onepage">
+        <h2> Quem Somos </h2>
         <div class="Container Flex3">
-            <div>
-                <h2> Quem Somos </h2>
+                
     
                 <p>Fundada em 1994, focada em tecnologia e em equipes altamente qualificadas. Priorizamos o aprimoramento técnico e intelectual de nossos colaboradores para garantir excelência na prestação de serviços jurídico, buscando soluções legais eficazes por meio de um atendimento claro e objetivo, visando a satisfação de nossos clientes. 
                 <br><br>
@@ -74,17 +76,19 @@
                 <br><br>
                 Com sedes em Santos/SP e Rio de Janeiro/RJ, atendemos demandas em todas as comarcas desses estados, contando com profissionais próprios e correspondentes. O constante investimento permite expandir os serviços para outras regiões do Brasil.</p>
             
-            </div>
+            
             <div id="video">
-                <img src="Imagens/quem-somos.jpg" alt="Exemplo">
+                <img src="Imagens/quem-somos.jpg" alt="Exemplo" loading="lazy">
             </div>
         </div>
     </section>
-    <!-- Wireframe -->
-    <section id="wireframe">
-        <div class="Container Flex3">
-                <div class="profissionais">
-                <h2>Profissionais</h2>
+
+    <!-- Profissionais -->
+    <section id="profissionais">
+        <div class="Container Flex2">
+           
+                <div class="textoProfissionais">
+                    <h2>Profissionais</h2>
                 
                     <h3>Dr. Julio Cesar Garcia</h3>
                     <p>Vasta experiência em serviços bancários e especialização em Direito Bancário, Securitário e Marítimo. Após graduar-se em Direito, ele realizou cursos de pós-graduação e mestrado em Direito Difusos e Coletivo. </p>
@@ -92,10 +96,11 @@
                 </div>
 
                 <div class="imgAdv">
-                <img src="Imagens/advogado.jpg" alt="Exemplo advogado">
+                <img src="Imagens/advogado.jpg" alt="Exemplo advogado" loading="lazy">
                 </div>
-
-                <div class="profissionais">
+        </div>
+        <div class="Container Flex2">
+                <div class="textoProfissionais">
                     <h3>Dra Cláudia de Oliveira Martins Pierry Garcia</h3>
                     <p>
                     A sócia Dra. Cláudia de Oliveira Martins Pierry Garcia, com formação em Terapia Ocupacional e Direito, coordena a equipe administrativa e de renegociadores, proporcionando eficiência e resultados satisfatórios aos clientes.
@@ -104,9 +109,9 @@
                 </div>
                     
                     <div class="imgAdv">
-                    <img src="Imagens/advogada.jpg" alt="Exemplo advogada">
+                    <img src="Imagens/advogada.jpg" alt="Exemplo advogada" loading="lazy">
                     </div>
-                
+         
             </div>
           
         </div>
@@ -117,16 +122,16 @@
             <h2>Área de Atuação</h2>
             <div class="Cards Flex4">
                 <div class="Card">
-                    <img src="Imagens/money.jpg" alt="Direito Bancário">
+                    <img src="Imagens/money.jpg" alt="Direito Bancário" loading="lazy">
                     <h3> Direito Bancário</h3>
                     <p>
                        Defendemos os interesses de instituições financeiras e sociedades seguradoras, buscando soluções rápidas através da transação judicial quando favorável ao cliente, além de lidar com questões de responsabilidade civil e consumo.
                         </p>
-                        <img class="pequenoLogo" src="Imagens/logo-seguro.png" alt="logo de seguro">
+                      
                         
                 </div>
                 <div class="Card">
-                    <img src="Imagens/seguro.jpg" alt="Direito Securitário">
+                    <img src="Imagens/seguro.jpg" alt="Direito Securitário" loading="lazy">
                     <h3>Direito Securitário</h3>
                     <p> Atuamos em todos os aspectos do contencioso, protegendo os interesses das sociedades seguradoras, especialmente em casos de recusa de cobertura de sinistros.
                         
@@ -134,7 +139,7 @@
                     
                 </div>
                 <div class="Card">
-                    <img src="Imagens/transporte.jpg" alt="Transporte de carga">
+                    <img src="Imagens/transporte.jpg" alt="Transporte de carga" loading="lazy">
                     <h3>Transporte Rodoviário e <br> Marítimo</h3>
                     <p>Defendemos os interesses dos transportadores em acidentes que envolvem responsabilidade civil.
                         <br>
@@ -143,44 +148,81 @@
                     
                 </div>
             </div>
-            <div id="todos">
-                <a href="https://www.youtube.com/playlist?list=PLbEOwbQR9lqySIIlPJ-Qwo4f4HSuXVeWk"
-                    target="_blank">Conheça todos >></a>
-            </div>
+            
         </div>
     </section>
+
+
+
     <!-- Rodapé -->
-    <address>
-        <div class="Container Flex6">
-            <div id="contato">
-                <a href="https://api.whatsapp.com/send?phone=5511012345678" target="_blank">
-                    <img src="img/whatsapp.png" alt="whatsapp" title="Abrir no WhatsApp">
-                    <p>(11) 01234-5678</p>
-                </a>
-                <img src="img/fone.png" alt="fone">
-                <p>(11) 01234-5678</p>
-            </div>
-            <div>
-                <p>Confie em nós para representar seus interesses com dedicação e experiência. Estamos aqui para oferecer soluções jurídicas eficazes e garantir a satisfação de nossos clientes. Entre em contato conosco para saber como podemos ajudá-lo.</p>
-                <a href="https://goo.gl/maps/mLpzArWKPpWZDgaD7"><img src="img/mapa.png" alt="Mapa" id="iconeMapa"></a>
-                <img src="img/local.png" alt="local" id="iconeLocal">
-                <p>Rua Nome da rua, 1234</p>
-                <p>Nome do bairro</p>
-                <p>São Paulo - SP</p>
-                <a href="mailto:seuemail@email.com?subject=HTML5CSS3">
-                    <img src="img/email.png" alt="email" title="Enviar E-mail">
-                    <p>seuemail@email.com</p>
-                </a>
-                <p id="dados">&#128064; Endereço e dados de contato ficticios</p>
-            </div>
+    <address id="localização">
+        <div class="Container Flex2">
+            <div id="localização">
+                
+            <div id="textoAdress">
+                <p>Confie em nós para representar seus interesses com dedicação e experiência. <br> Estamos aqui para oferecer soluções jurídicas eficazes e garantir a satisfação de nossos clientes. 
+                    <br>   
+                Entre em contato conosco para saber como podemos ajudá-lo.</p>
+                <!-- <a href="https://maps.app.goo.gl/h6es4uzHU4F93vvr9">
+                    <img src="Imagens/mapa.png" alt="Mapa" id="iconeMapa"></a> -->
+            </div> 
+
+                <h3>Escritório Santos</h3>
+
+                    <div class="icone">
+                    <img src="Imagens/local.png" alt="local">
+                    <p>Rua São Francisco nº 240 - Centro - Santos/SP </p>
+                    </div>
+
+                    <div class="icone">
+                    <img src="Imagens/fone.png" alt="fone">
+                    <p>(13) 4010-3850</p>
+                    </div>
+
+                    <div class="icone">
+                    <img src="Imagens/email.png" alt="email">
+                    <p>juridico@jcgarcia.adv.br</p>
+                    </div>
+
+             
             <div id="googleMaps">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14631.893034344139!2d-46.56380894999999!3d-23.5334642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1656422745432!5m2!1spt-BR!2sbr"
+                    src="https://maps.app.goo.gl/tzUCDfrkpuqzUUw69"
                     width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+
         </div>
     </address>
+    <section id="contato">
+        <form action="get">
+                
+            <legend>Entre em Contato</legend>
+            
+            <label for="name">Nome * </label>
+            <input type="text" name="name" id="name" required>
+            <br><br>
+            <label for="tel">Telefone *</label>
+            <input type="phone" name="number" id="number" required>
+            <br><br>
+            <label for="email">E-mail *</label>
+            <input type="email" name="email" id="email" required>
+            <br><br>
+
+            <label for="mensagem">Mensagem *</label>
+            <br><br>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+            <br><br>
+            <button class="botao">Enviar</button>
+
+
+
+
+    </form>
+
+    </section>
+
+    
     <footer>
         <div class="Container Flex5">
             <div>

@@ -80,12 +80,6 @@ body {
   height: 200px;
 }
 
-.pequenoLogo{
-  width: 20px;
-  height: 20px;
-  text-align: center;
-}
-
 .Card h3 {
   margin-top: 15px;
 }
@@ -105,6 +99,13 @@ body {
 /* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 /* Cabeçalho */
+
+#fundo{
+  background: url(Imagens/fundoBranco.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 header {
   height: 60px;
 }
@@ -189,28 +190,21 @@ main h2 {
   padding: 0px 10px;
 }
 
-#textoSobre h2 {
-  margin-bottom: 10px;
-}
-
-.TopicosSobre {
-  margin-top: 20px;
-}
-
-.TopicosSobre img {
-  margin-right: 10px;
-}
 
 /* One page */
 #onepage {
   padding: 50px 10px;
+  background: url(Imagens/fundoBranco.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
-#onepage h2, #wireframe h2 {
+#onepage h2{
   margin-bottom: 10px;
+  text-align: center;
 }
 
-#onepage p, #wireframe p {
+#onepage p {
   margin-bottom: 25px;
 }
 
@@ -230,31 +224,35 @@ main h2 {
 h3{
   margin-bottom: 20px;
 }
-.imgAdv{
-  width: 600px;
-  height: 300px;
-  border: 0;
-  padding: 15px;
 
-}
-.imgAdv img{
-  width: 500px;
-  height: 300px;
-  border-radius: 50%
-}
-
-/* Wireframe */
-#wireframe {
-  padding: 50px 10px;
-  background: url(Imagens/fundo-azul.jpg);
+/* Profissionais */
+#profissionais {
+  padding: 50px 0px;
+  background: url(Imagens/outro-fundo.png);
   background-size: cover;
   background-position: center;
-  color: white;
 }
+
+.imgAdv{
+  display: none;
+}
+
+.textoProfissionais{
+  color: #fff;
+  padding: 0px 10px;
+}
+.textoProfissionais h2{
+  margin-bottom: 10px;
+}
+
+
 
 /* Conteúdo */
 #conteudo {
   padding: 50px 0px;
+  background: url(Imagens/fundoBranco.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 #conteudo h2 {
@@ -262,22 +260,11 @@ h3{
   text-align: center;
 }
 
-#todos {
-  margin-top: 50px;
-  text-align: center;
-}
-
-#todos a {
-  text-decoration: none;
-  color: #000;
-  font-weight: 700;
-  font-size: 1.25em;
-}
 
 /* Rodapé */
 address {
   padding: 35px 10px 50px 10px;
-  background: url(Imagens/fundo-azul.jpg);
+  background: url(Imagens/outro-fundo.png);
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -288,25 +275,33 @@ address a {
   color: #fff;
 }
 
-address img {
-  padding-top: 15px;
+#textoAdress p{
+  text-align: left;
 }
 
-#iconeLocal {
-  display: none;
-}
-
-#dados {
-  margin: 30px 0px 15px 0px;
-}
 
 #googleMaps {
   display: none;
+  align-items: right;
+}
+
+#contato{
+  padding: 20px;
+  background: url(Imagens/fundoBranco.jpg);
+  background-size: cover;
+  background-position: center;
+  font-size: 0.875em;
+  text-align: center;
+}
+form{
+  color: #144770;
 }
 
 footer {
   padding: 50px 0px;
-  background-color: #343538;
+  background: url(Imagens/fundo-azul.jpg);
+  background-size: cover;
+  background-position: center;
   font-size: 0.875em;
   color: #fff;
   text-align: center;
@@ -360,7 +355,7 @@ footer a {
   nav ul li a{
     color: #144770;
 }
-nav ul li a:hover {
+  nav ul li a:hover {
     background-color:#144770;
     color:#ffffff;
     padding: 10px;
@@ -392,39 +387,42 @@ nav ul li a:hover {
     margin-right: 50px;
   }
 
+  /*Profissionais*/
+  #profissionais{
+    background-attachment: fixed;
+  }
+
+  .imgAdv{
+    display: inline;
+  }
+
+  .imgAdv img{
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 200px;
+  }
+
   /* One page */
   .Flex3 {
     flex-direction: row;
     align-items: center;
   }
 
+  /*Adress*/
+  #textoAdress{
+    margin-bottom: 20px;
+  }
 
-  /* Wireframe */
-  #wireframe {
-    background-attachment: fixed;
-    padding: 50px 0px;
-    background: url(Imagens/fundo-azul.jpg);
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    
-  }
- 
-  .imgAdv img{
-    width: 500px;
-    height: 300px;
-    border-radius: 50%
-  }
-  
-  .imgAdv{
-    width: 600px;
-    height: 300px;
-    border: 0;
-    padding: 15px;
-  
-  }
-  
+  .icone{
+    display: flex;
+    padding: 10px;
 
+  }
+  .icone p{
+    margin-left: 5px;
+  }
   /* Rodapé */
   .Flex6 {
     flex-direction: row-reverse;
@@ -432,14 +430,35 @@ nav ul li a:hover {
 
   address {
     padding-top: 50px;
+    }
+
+    .botao{
+      border: solid 1px #b6af92;
+      border-radius: 20px;
+      width: 100px;
+      color: #144770;
+      background-color: #b6af92;
+      padding: 10px;
+      transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+  }
+    
+  
+
+    form{
+      width: 50%;
+      padding: 10px;
+      margin-left: 50px;
+      }
+  legend{
+    color: #b6af92;
+    font-size: 20px;
+    padding: 10px;
   }
 
-  #iconeLocal {
-    display: inline;
-  }
-
-  #iconeMapa {
-    display: none;
+  .botao:hover{
+  background-color: rgb(218, 175, 59);
+  color: #144770;
+  transform: scale(1.2)
   }
 
   #googleMaps {
