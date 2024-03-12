@@ -96,9 +96,8 @@ body {
 }
 
 
-/* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
-/* Cabeçalho */
+
 
 #fundo{
   background: url(Imagens/fundoBranco.jpg);
@@ -110,14 +109,17 @@ header {
   height: 60px;
 }
 
-#logo img {
-  width: 128px;
-  height: 128px;
-}
+
 
 #check {
   display: none;
 }
+
+#check:checked ~ ul {
+  /* right: 0; */
+  display: block;
+}
+
 
 label {
   font-size: 3em;
@@ -138,9 +140,6 @@ nav ul {
   transition: all 0.5s;
 }
 
-#check:checked ~ ul {
-  right: 0;
-}
 
 nav ul li {
   padding: 20px;
@@ -233,16 +232,15 @@ h3{
   background-position: center;
 }
 
-.imgAdv{
-  display: none;
+#profissionais h2{
+  margin-bottom: 10px;
+  text-align: center;
 }
+
+
 
 .textoProfissionais{
   color: #fff;
-  padding: 0px 10px;
-}
-.textoProfissionais h2{
-  margin-bottom: 10px;
 }
 
 
@@ -263,27 +261,16 @@ h3{
 
 /* Rodapé */
 address {
-  padding: 35px 10px 50px 10px;
   background: url(Imagens/outro-fundo.png);
   background-size: cover;
   background-position: center;
   color: #fff;
 }
 
-address a {
-  text-decoration: none;
-  color: #fff;
-}
-
-#textoAdress p{
-  text-align: left;
-}
-
-
-#googleMaps {
+/* #googleMaps {
   display: none;
   align-items: right;
-}
+} */
 
 #contato{
   padding: 20px;
@@ -293,9 +280,17 @@ address a {
   font-size: 0.875em;
   text-align: center;
 }
-form{
-  color: #144770;
+
+#form-container,
+#image-container {
+    width: 90%
 }
+
+#image-container img{
+  width:70%
+}
+
+
 
 footer {
   padding: 50px 0px;
@@ -317,8 +312,68 @@ footer a {
 }
 
 
+@media (max-width: 767px) {
+
+  #video img {
+    max-width: 100%; /* Define uma largura máxima de 100% para a imagem */
+    height: auto; /* Garante que a altura seja ajustada automaticamente para manter a proporção */
+  }
+  #inicio{
+    padding: 10px;
+  }
+  #logo{
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+   
+  }
+
+  #onepage{
+    flex-direction: column;
+  }
+  #video img{
+    width: 50%;
+    text-align: center;
+  }
+
+  #profissionais .Container {
+  
+    flex-direction: column; /* Altera a direção do flex container para coluna */
+  }
+
+  #profissionais .textoProfissionais {
+    order: 1; /* Define a ordem do texto para 1 (aparecerá primeiro) */
+  }
+
+  #profissionais .imgAdv {
+    order: 2; /* Define a ordem da imagem para 2 (aparecerá depois do texto) */
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 1200px) {
+
+  #logo img {
+    width: 128px;
+    height: 128px;
+  }
+  
   /* Layout */
   .Container {
     max-width: 1140px;
@@ -404,6 +459,20 @@ footer a {
     height: 200px;
   }
 
+  .escritorio {
+    width: 45%;
+    padding: 20px;
+}
+
+#localização{
+  display: flex;
+}
+
+adress #localização h2{
+  margin-bottom: 10px;
+  text-align: center;
+}
+
   /* One page */
   .Flex3 {
     flex-direction: row;
@@ -432,28 +501,60 @@ footer a {
     padding-top: 50px;
     }
 
+    
+    
+  #form-container {
+    width: 45%;
+    padding: 20px;
+}
+
+#form-container h2 {
+    margin-bottom: 20px;
+}
+
+
+
+#form-container input,
+#form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #144770;
+}
+
+#form-container input::placeholder,
+#form-container textarea::placeholder {
+    color: #144770; 
+}
+
+#contato{
+  display: flex;
+}
+ 
     .botao{
       border: solid 1px #b6af92;
       border-radius: 20px;
-      width: 100px;
+      width: 50%;
+      padding: 10px;
       color: #144770;
       background-color: #b6af92;
       padding: 10px;
       transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+      cursor: pointer;
   }
-    
-  
 
-    form{
-      width: 50%;
-      padding: 10px;
-      margin-left: 50px;
-      }
-  legend{
-    color: #b6af92;
-    font-size: 20px;
-    padding: 10px;
-  }
+
+#image-container {
+    width: 45%;
+}
+
+#image-container img {
+    width: 100%;
+    margin-top:30px;
+    padding: 30px;
+}
 
   .botao:hover{
   background-color: rgb(218, 175, 59);

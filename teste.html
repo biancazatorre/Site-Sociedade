@@ -85,7 +85,7 @@
 
     <!-- Profissionais -->
     <section id="profissionais">
-        <div class="Container Flex2">
+       
            
                 <div class="textoProfissionais">
                     <h2>Profissionais</h2>
@@ -98,8 +98,8 @@
                 <div class="imgAdv">
                 <img src="Imagens/advogado.jpg" alt="Exemplo advogado" loading="lazy">
                 </div>
-        </div>
-        <div class="Container Flex2">
+       
+        
                 <div class="textoProfissionais">
                     <h3>Dra Cláudia de Oliveira Martins Pierry Garcia</h3>
                     <p>
@@ -112,7 +112,7 @@
                     <img src="Imagens/advogada.jpg" alt="Exemplo advogada" loading="lazy">
                     </div>
          
-            </div>
+            
           
         </div>
     </section>
@@ -155,18 +155,11 @@
 
 
     <!-- Rodapé -->
-    <address id="localização">
-        <div class="Container Flex2">
-            <div id="localização">
-                
-            <div id="textoAdress">
-                <p>Confie em nós para representar seus interesses com dedicação e experiência. <br> Estamos aqui para oferecer soluções jurídicas eficazes e garantir a satisfação de nossos clientes. 
-                    <br>   
-                Entre em contato conosco para saber como podemos ajudá-lo.</p>
-                <!-- <a href="https://maps.app.goo.gl/h6es4uzHU4F93vvr9">
-                    <img src="Imagens/mapa.png" alt="Mapa" id="iconeMapa"></a> -->
-            </div> 
-
+    <address >
+         <div id="localização">
+                <h2>Localização</h2>
+            
+            <div id="escritorio1">
                 <h3>Escritório Santos</h3>
 
                     <div class="icone">
@@ -176,7 +169,7 @@
 
                     <div class="icone">
                     <img src="Imagens/fone.png" alt="fone">
-                    <p>(13) 4010-3850</p>
+                    <p>(13) XXXX-XXXX</p>
                     </div>
 
                     <div class="icone">
@@ -192,41 +185,74 @@
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
+
+<div id="escritorio2">
+    <h3>Escritório Rio de Janeiro</h3>
+
+        <div class="icone">
+        <img src="Imagens/local.png" alt="local">
+        <p>Av. Rio Branco n.º 26, Sobreloja
+            Centro - Rio de Janeiro/RJ  </p>
+        </div>
+
+        <div class="icone">
+        <img src="Imagens/fone.png" alt="fone">
+        <p>(13) XXX-XXXXX</p>
+        </div>
+
+        <div class="icone">
+        <img src="Imagens/email.png" alt="email">
+        <p>juridico@jcgarcia.adv.br</p>
+        </div>
+
+ 
+<div id="googleMaps">
+    <iframe
+        src="https://maps.app.goo.gl/tzUCDfrkpuqzUUw69"
+        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</div>
         </div>
     </address>
     <section id="contato">
-        <form action="get">
+        <div id="form-container">
+        <form action="get" >
                 
-            <legend>Entre em Contato</legend>
+            <h2>Entre em Contato</h2>
             
-            <label for="name">Nome * </label>
-            <input type="text" name="name" id="name" required>
+            <label for="name"></label>
+            <input type="text" name="name" id="name" placeholder="Nome" required>
             <br><br>
-            <label for="tel">Telefone *</label>
-            <input type="phone" name="number" id="number" required>
+            <label for="phone"></label>
+            <input type="tel" name="phone" id="phone" placeholder="Telefone" required>
             <br><br>
-            <label for="email">E-mail *</label>
-            <input type="email" name="email" id="email" required>
+            <label for="email"></label>
+            <input type="email" name="email" id="email" placeholder="E-mail" required>
             <br><br>
 
-            <label for="mensagem">Mensagem *</label>
+            <label for="message"></label>
             <br><br>
-            <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
             <br><br>
-            <button class="botao">Enviar</button>
+            <button type="submit" class="botao">Enviar</button>
 
 
 
 
-    </form>
+        </form>
+        </div>
 
+        <div id="image-container">
+            <img src="Imagens/empresarial.jpg" alt="Imagem fechando negócio">
+        </div>
     </section>
 
     
     <footer>
         <div class="Container Flex5">
             <div>
-                <p>&#169;2023 - <a href="https://joseassis.com.br/" target="_blank">Professor José de Assis</a></p>
+                <p>&#169;2023 - <a href="https://joseassis.com.br/" target="_blank">JC Garcia Sociedade de Advogados - Todos os direitos reservados</a></p>
             </div>
             <div id="social">
                 <a href="https://www.linkedin.com/" target="_blank"><img src="Imagens/linkedin.png"
